@@ -1,8 +1,6 @@
 import InfoCard from "@/components/InfoCard";
 import MemberCard from "./MemberCard";
 import picFederico from "./pictures/federico.png";
-import picJulieta from "./pictures/julieta.png";
-import picFrancisco from "./pictures/francisco.png";
 import FCi18n from "@/i18n/types/FCi18n";
 import dictionary from "./dictionary";
 
@@ -17,24 +15,10 @@ const Team: FCi18n<{}> = ({ lang }) => {
                 <MemberCard
                     picSrc={picFederico.src}
                     name="Federico"
-                    subtitle={localeDict.project_leader}
+                    subtitle={localeDict.collaborator}
                     urlLinkedIn="https://www.linkedin.com/in/fgiancarelli/"
                     urlGitHub="https://github.com/omirete/"
                     urlWebsite="https://federicogiancarelli.com/"
-                />
-                <MemberCard
-                    picSrc={picJulieta.src}
-                    name="Julieta"
-                    subtitle={localeDict.marketing}
-                    urlLinkedIn="https://www.linkedin.com/in/julietamo/"
-                    urlWebsite="https://julietamorales.com/"
-                />
-                <MemberCard
-                    picSrc={picFrancisco.src}
-                    name="Francisco"
-                    subtitle={localeDict.tech_leader}
-                    urlLinkedIn="https://www.linkedin.com/in/giancarellifrancisco/"
-                    urlGitHub="https://github.com/padapada09/"
                 />
             </div>
         </InfoCard>
